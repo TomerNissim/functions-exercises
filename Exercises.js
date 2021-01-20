@@ -21,9 +21,16 @@ function allCombinations(str) {
 
 //Question 3
 function allCaps(str) {
-  // your code here
-  return "";
+  let arr = str.split(" ");
+  str = "";
+  for(let i = 0; i < arr.length; i++){
+      arr[i] =  arr[i][0].toUpperCase() + arr[i].substr(1);
+      str = str + arr[i] + " ";
+  }
+  str = str.slice(0,-1);
+  return str;
 }
+
 
 //Question 4
 function myPower(x, n) {
@@ -45,7 +52,7 @@ function isPrefectNumber(num) {
 
 // *** Playground ***
 // Feel free to run and test your code here on your own
-
+console.log(allCaps("shallom olam"));
 // *** End of Playground ***
 
 // Don't touch me :)
