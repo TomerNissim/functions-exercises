@@ -34,9 +34,13 @@ function allCaps(str) {
 
 //Question 4
 function myPower(x, n) {
-  // your code here
-  return "";
+  let power = 1 ;
+  for(let i = 0; i < n; i++){
+      power = power * x;
+  }
+  return power;
 }
+
 
 //Question 5
 function getFirstNotRepeating(str) {
